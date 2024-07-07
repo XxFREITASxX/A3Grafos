@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
+
   bool loop = true;
   do {
 
@@ -15,8 +15,8 @@ int main()
     cout << "|    GERENCIADOR DE ATIVIDADES    |" << endl;
     cout << "|                                 |" << endl;
     cout << "|  (1) Cadastrar                  |" << endl;
-    cout << "|  (2) Consultar Atividade        |" << endl;
-    cout << "|  (3) Imprimir Grafo             |" << endl;
+    cout << "|  (2) Consultar                  |" << endl;
+    cout << "|  (3) Imprimir                   |" << endl;
     cout << "|  (4) Remover                    |" << endl;
     cout << "|  (5) Atualizar                  |" << endl;
     cout << "|  (0) Sair                       |" << endl;
@@ -61,12 +61,12 @@ int main()
 
        if ( 0 != nullptr) {
 
-          cout << "Nome: " << endl;
+          cout << "\nNome: " << endl;
           cout << "Duração Estimada: " << endl;
 
       } else {
 
-          cout << "Atividade não encontrada." << endl;
+          cout << "\nAtividade não encontrada." << endl;
 
       }
 
