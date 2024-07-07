@@ -50,7 +50,15 @@ void Grafo::removerVertice(){
 
 }
 
-void Grafo::adicionarAresta(int vertice){
+void Grafo::adicionarAresta(int vertice1, int vertice2){
+
+    Vertice* temp = listaAdj;
+
+    while(temp != nullptr && temp->id != vertice1){
+        temp = temp->prox;
+    }
+
+    temp;
     
     Aresta* novaAresta = new Aresta(vertice);
 
