@@ -27,30 +27,30 @@ int main() {
 
     case 1: {
 
-      int numero;
-      char inserir;
-      string nome;
-      int duracaoEstimada;
-      char resposta;
+      // int numero;
+      // char inserir;
+      // string nome;
+      // int duracaoEstimada;
+      // char resposta;
 
-      cout << "\nInsira o nome da atividade: " << endl;
-      cin >> nome;
-      cout << "\nInsira a duração estimada da atividade(Em Horas): " << endl;
-      cin >> duracaoEstimada;
-      cout << "\nDeseja inserir uma dependencia? (S/N)" << endl;
-      cin >> resposta;
-      if (resposta == 'S' || resposta == 's'){
-        do {
-          cout << "\nInsira um numero" << endl;
-          cin >> numero;
+      // cout << "\nInsira o nome da atividade: " << endl;
+      // cin >> nome;
+      // cout << "\nInsira a duração estimada da atividade(Em Horas): " << endl;
+      // cin >> duracaoEstimada;
+      // cout << "\nDeseja inserir uma dependencia? (S/N)" << endl;
+      // cin >> resposta;
+      // if (resposta == 'S' || resposta == 's'){
+      //   do {
+      //     cout << "\nInsira um numero" << endl;
+      //     cin >> numero;
 
-          cout << "Deseja inserir outro número? (S/N)" << endl;
-          cin >> inserir;
+      //     cout << "Deseja inserir outro número? (S/N)" << endl;
+      //     cin >> inserir;
 
-        } while (inserir == 'S' || inserir == 's');
-      }
+      //   } while (inserir == 'S' || inserir == 's');
+      // }
 
-      cout << "Atividade cadastrada com sucesso!" << endl;
+      // cout << "Atividade cadastrada com sucesso!" << endl;
       break;
     }
     case 2:

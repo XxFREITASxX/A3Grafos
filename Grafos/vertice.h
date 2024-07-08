@@ -7,6 +7,7 @@ struct Aresta{
     
     int vertice;
     Aresta* prox;  // Ponteiro responsavel pelo encadeamento das arestas
+    Aresta(int vertice) : vertice{vertice}, prox{nullptr} {};
 }
 
 class Vertice{
@@ -24,6 +25,9 @@ class Vertice{
 
     Vertice(int id, int duracao, const string& nome, const string& informacao) 
     : id{id}, duracao{duracao}, nome{nome}, informacao{informacao}, prox{nullptr} {}; // Construtor 
+
+    void adicionarAresta(int vertice);
+    void removerAresta(int vertice);
 }
 
 #endif

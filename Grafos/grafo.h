@@ -14,15 +14,15 @@ class Grafo{
     public:
 
     Grafo() : listaAdj{nullptr}, vertices{0}, arestas{0} {}; // Inicializando os contadores com 0 no construtor
-    void consultarVertice();
+    // void consultarVertice();
     void adicionarVertice(int duracao, string nome, string informacao);
     void removerVertice(int id);
-    void adicionarAresta(int vertice1, int vertice2);
-    void removerAresta();
+    // void adicionarAresta(int vertice1, int vertice2);
+    // void removerAresta();
     void imprimir();
-    void retornarGrau();
-    int grauMinimo();
-    int grauMaximo();
+    // void retornarGrau();
+    // int grauMinimo();
+    // int grauMaximo();
 
 }
 

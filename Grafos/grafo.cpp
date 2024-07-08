@@ -1,13 +1,10 @@
 #include <iostream>
 
+/**
 void Grafo::consultarVertice(){
 
 }
-
-// void GrafoAtividade::cadastrarAtividade(string nome, int duracao) {
-//  Atividade* novaAtividade = new Atividade(nome, this->proximoId, duracao);
-//  this->listaAdjacencia.push_back(vector<Atividade*>{novaAtividade}); 
-//  this->proximoId++;
+*/
 
 void Grafo::adicionarVertice(int duracao, const string& nome, const string& informacao){
 
@@ -50,40 +47,48 @@ void Grafo::removerVertice(){
 
 }
 
-void Grafo::adicionarAresta(int vertice1, int vertice2){
+void Grafo::imprimir(){
+    if (listaAdj == nullptr) {
+        cout << "Grafo vazio ou não encontrado." << endl;
+        return;
+    }
 
     Vertice* temp = listaAdj;
+    while (temp != nullptr) {
+        cout << "Vértice " << temp->id << ":" << endl;
+    
+        Aresta* tempAresta = temp->arestas;
 
-    while(temp != nullptr && temp->id != vertice1){
+        while (tempArestas != nullptr) {
+            cout << "\nArestas: " << tempArestas->vertice << endl;
+            tempArestas = tempAresta->prox;
+        }
+    }
+}
+/*
+void Grafo::retornarGrau(int id){
+    if (listaAdj == nullptr) {
+        cout << "Nenhum vértice foi encontrado." << endl;
+        return;
+    }
+
+    Vertice* temp = listaAdj;
+    while (temp != nullptr && temp->id != id) {
         temp = temp->prox;
     }
 
-    temp;
-    
-    Aresta* novaAresta = new Aresta(vertice);
-
-    if(arestas == nullptr){
-        arestas = novaAresta;
+    if (temp == nullptr) {
+        cout << "Vértice não encontrado." << endl;
     } else {
-        Aresta* temp = arestas;
-        while(temp->prox != nullptr){
-            temp = temp->prox;
+
+        int grau = 0;
+
+        Aresta* tempAresta = temp->arestas;
+        while (tempAresta != nullptr) {
+            grau++;
+            tmepAresta = tempAresta->prox;
         }
-        temp->prox = novaAresta;
     }
-
-}
-
-void Grafo::removerAresta(){
-
-}
-
-void Grafo::imprimir(){
-
-}
-
-void Grafo::retornarGrau(){
-
 }
 
 int Grafo::grauMaximo(){
@@ -93,3 +98,5 @@ int Grafo::grauMaximo(){
 int Grafo::grauMinimo(){
     
 }
+
+*/
