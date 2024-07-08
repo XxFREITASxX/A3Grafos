@@ -1,4 +1,3 @@
-#include <iostream>
 
 /**
 void Grafo::consultarVertice(){

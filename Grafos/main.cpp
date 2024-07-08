@@ -1,8 +1,10 @@
-#include <iostream>
+#include "GRAFO_H"
 
 using namespace std;
 
 int main() {
+
+  Grafo meuGrafo;
 
   bool loop = true;
   do {
@@ -55,30 +57,54 @@ int main() {
     }
     case 2:
 
-      int id;
-      cout << "ID da Atividade Desejada: ";
-      cin >> id;
+      // int id;
+      // cout << "ID da Atividade Desejada: ";
+      // cin >> id;
 
-       if ( 0 != nullptr) {
+      //  if ( 0 != nullptr) {
 
-          cout << "\nNome: " << endl;
-          cout << "Duração Estimada: " << endl;
+      //     cout << "\nNome: " << endl;
+      //     cout << "Duração Estimada: " << endl;
 
-      } else {
+      // } else {
 
-          cout << "\nAtividade não encontrada." << endl;
+      //     cout << "\nAtividade não encontrada." << endl;
 
-      }
-
-      break;
-
-    case 3:
- 
-      break;
-
-    case 4:
+      // }
 
       break;
+
+    case 3: {
+
+    int duracao;
+    string nome, informacao;
+    cout << "\nInforme a duracao: ";
+    cin >> duracao;
+    cout << "\nInforme o nome: ";
+    cin >> nome;
+    cout << "\nDescreva: ";
+    cin >> informacao;
+
+      meuGrafo.adicionarVertice(duracao, nome, informacao)
+      break;
+    }
+
+    case 4: {
+
+    int id;
+
+    cout << "\nInforme o ID: ";
+    cin >> id;
+
+      meuGrafo.removerVertice(id)
+
+      break;
+    }
+
+    case 5: {
+      meuGrafo.imprimir()
+      break;
+    }
 
     case 0:
 

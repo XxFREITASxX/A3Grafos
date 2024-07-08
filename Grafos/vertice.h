@@ -26,8 +26,8 @@ class Vertice{
     Vertice(int id, int duracao, const string& nome, const string& informacao) 
     : id{id}, duracao{duracao}, nome{nome}, informacao{informacao}, prox{nullptr} {}; // Construtor 
 
-    void adicionarAresta(int vertice);
-    void removerAresta(int vertice);
+    // void adicionarAresta(int vertice);
+    // void removerAresta(int vertice);
 }
 
 #endif
