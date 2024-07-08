@@ -1,3 +1,7 @@
+#include "grafo.h"
+#include <iostream>
+
+using namespace std;
 
 /**
 void Grafo::consultarVertice(){

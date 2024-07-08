@@ -1,4 +1,5 @@
-#include "GRAFO_H"
+#include "Grafo.h"
+#include <iostream>
 
 using namespace std;
 
@@ -85,7 +86,7 @@ int main() {
     cout << "\nDescreva: ";
     cin >> informacao;
 
-      meuGrafo.adicionarVertice(duracao, nome, informacao)
+      meuGrafo.adicionarVertice(duracao, nome, informacao);
       break;
     }
 
@@ -96,13 +97,13 @@ int main() {
     cout << "\nInforme o ID: ";
     cin >> id;
 
-      meuGrafo.removerVertice(id)
+      meuGrafo.removerVertice(id);
 
       break;
     }
 
     case 5: {
-      meuGrafo.imprimir()
+      meuGrafo.imprimir();
       break;
     }
 

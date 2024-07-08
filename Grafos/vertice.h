@@ -3,12 +3,14 @@
 
 #include <iostream>
 
+using namespace std;
+
 struct Aresta{
     
     int vertice;
     Aresta* prox;  // Ponteiro responsavel pelo encadeamento das arestas
     Aresta(int vertice) : vertice{vertice}, prox{nullptr} {};
-}
+};
 
 class Vertice{
     
@@ -28,7 +30,6 @@ class Vertice{
 
     // void adicionarAresta(int vertice);
     // void removerAresta(int vertice);
-}
+};
 
 #endif
-

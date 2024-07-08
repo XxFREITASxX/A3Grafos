@@ -3,6 +3,8 @@
 
 #include "vertice.h"
 
+using namespace std;
+
 class Grafo{
 
     private:
@@ -15,7 +17,7 @@ class Grafo{
 
     Grafo() : listaAdj{nullptr}, vertices{0}, arestas{0} {}; // Inicializando os contadores com 0 no construtor
     // void consultarVertice();
-    void adicionarVertice(int duracao, string nome, string informacao);
+    void adicionarVertice(int duracao, const string& nome, const string& informacao);
     void removerVertice(int id);
     // void adicionarAresta(int vertice1, int vertice2);
     // void removerAresta();
@@ -24,6 +26,6 @@ class Grafo{
     // int grauMinimo();
     // int grauMaximo();
 
-}
+};
 
 #endif

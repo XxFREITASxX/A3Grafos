@@ -1,3 +1,5 @@
+#include "vertice.h"
+
 //  void Vertice::adicionarAresta(int vertice){
     
 //     Aresta* novaAresta = new Aresta(vertice);
